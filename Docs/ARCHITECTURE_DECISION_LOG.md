@@ -59,3 +59,20 @@ Governing Authority: `Docs/MI.md` Part 8 (Decision & Conflict-Resolution Princip
 **Scope Impact:** Repository structure — net-new folder only; no existing file modified.
 
 ---
+
+### ADL-2026-08-19-04
+
+**Context:** Checkpoint 001 recorded Foundation Batch 2 as recommended but not started, scoped to `MULTI-TENANCY.md`, `MODULE-FRAMEWORK.md`, `CONFIGURATION-METADATA.md`, "open for user confirmation or override before Batch 2 begins." The user's next message was the canonical Continue trigger (MI Appendix A: "Continue from checkpoint" and close variants), which per Appendix A "triggers the Resume Policy... from the last recorded checkpoint" without requiring the user to restate context already in the ledger. Separately, while sourcing this batch, both `Docs/Raw knowledge files/02_...Product_Specification_Requirement.md` and `.../07_...Enterprise_Default_Standards.md` were confirmed to contain Healthcare/LIS-concentrated examples (e.g., "Independent Patients," "Independent Doctors," a dedicated "LIS" setting-module entry, "Lab Websites"/"Lab Admin" terminology) consistent with the Healthcare/LIS concentration already noted in ADL-2026-08-19-01's session context.
+
+**Action:** (a) Treated the Continue trigger itself as satisfying the checkpoint's own "confirmation or override" note and proceeded directly into Batch 2 under the recommended scope, without pausing for a separate confirmation round-trip. (b) Generalized every Healthcare/LIS-specific example encountered while drafting `MULTI-TENANCY.md`, `MODULE-FRAMEWORK.md`, and `CONFIGURATION-METADATA.md` into industry-neutral equivalents (e.g., "Independent Patients/Doctors" → "independent operational records/master data"; the raw "LIS" setting-module entry → "Industry Module Settings") before any Core Platform-tier statement was finalized, per the Industry-Neutrality Audit (MI Part 8, P6).
+
+**Recommendation:** Adopt both as the standing pattern for all future batches: a bare Continue-family trigger resumes a checkpoint's own recommended Next Action without a separate confirmation message unless the checkpoint flagged a genuine open question (not merely "open for override"); and every batch sourced from the Healthcare/LIS-concentrated raw knowledge files must run the Industry-Neutrality generalization pass described here before Verification.
+
+**Why:** MI Appendix A is explicit that a Continue-family trigger resumes "from the last recorded checkpoint" and instructs the session to "never ask the user to restate context already in the Checkpoint Ledger" — re-asking for confirmation of a Next Action the ledger already recommended would violate that instruction. The generalization pass is required directly by MI Part 5.1 (Single-Industry Knowledge Protection) and Part 8 P6 (Industry-Neutrality Audit), and was foreseeable given ADL-2026-08-19-01's own note that the supplied raw knowledge is Healthcare/LIS-concentrated.
+
+**Alternatives (rejected):** (a) Pause after loading the checkpoint and ask the user to explicitly re-confirm Batch 2's scope before drafting anything — rejected as contrary to MI Appendix A's explicit instruction for Continue-family triggers. (b) Reproduce the raw knowledge's Healthcare/LIS examples verbatim in the Core-tier documents and flag them as "to be generalized later" — rejected because MI Part 10 (Quality Assurance gate) requires the Industry-Neutrality Audit to pass *before* publication, not after.
+
+**Authority Cited:** MI Appendix A (Canonical Continuation Commands); MI Part 5.1 (Single-Industry Knowledge Protection); MI Part 8, P6 (Industry-Neutrality Audit); MI Part 9.3 (Resume Policy).
+**Scope Impact:** Foundation/Knowledge Base document set — Batch 2 of the anticipated ~9–11 batch sequence across the 31 files (`MULTI-TENANCY.md`, `MODULE-FRAMEWORK.md`, `CONFIGURATION-METADATA.md`).
+
+---
