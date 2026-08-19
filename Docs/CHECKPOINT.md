@@ -61,3 +61,65 @@ Blocking Conditions:  None for Batch 1. GitHub write access is not standing/pers
 ```
 
 ---
+
+## Checkpoint 002
+
+```
+Checkpoint ID:        2026-08-19-002
+Current Phase:        Phase 3 — Project Foundation Construction
+Current Task:         SBGlobal Plus Knowledge Base — Foundation Batch 2 (Tier-1 Core-Platform
+                       capability documents)
+Completed Tasks:      Batch 1 — VISION.md v1.0, ARCHITECTURE.md v1.0, CORE-STANDARDS.md v1.0
+                       (Published). Batch 2 — MULTI-TENANCY.md v1.0, MODULE-FRAMEWORK.md v1.0,
+                       CONFIGURATION-METADATA.md v1.0 (Published).
+In-Progress Task:     None
+Remaining Tasks:      25 of 31 Foundation documents not yet started:
+                       README.md, INDEX.md, CHANGELOG.md (Tier-0, index/meta — still deferred per
+                         ADL-2026-08-19-02),
+                       PLATFORM-BRANDING.md, SECURITY-GOVERNANCE.md, AI-API-STRATEGY.md,
+                       DATA-ARCHITECTURE.md, INTEGRATION-FRAMEWORK.md, DEPLOYMENT-OPERATIONS.md,
+                       DEVELOPMENT-GUIDE.md, TESTING-QUALITY.md, OBSERVABILITY-MONITORING.md,
+                       BUSINESS-FRAMEWORK.md, DESKTOP-APPLICATION.md, MOBILE-OFFLINE-SYNC.md,
+                       INSTALLATION-DEPLOYMENT.md, AUTHENTICATION-AUTHORIZATION.md,
+                       LICENSING-DEVICE-MANAGEMENT.md, OFFLINE-SYNCHRONIZATION.md, MARKETPLACE.md,
+                       PLUGIN-DEVELOPMENT.md, AFFILIATE-FRAMEWORK.md, NOTIFICATION-COMMUNICATION.md,
+                       ROADMAP.md, COMPLIANCE-PRIVACY.md
+Files Created/Modified: Docs/SBGlobal_Plus_Knowledge_Base/MULTI-TENANCY.md (new)
+                       Docs/SBGlobal_Plus_Knowledge_Base/MODULE-FRAMEWORK.md (new)
+                       Docs/SBGlobal_Plus_Knowledge_Base/CONFIGURATION-METADATA.md (new)
+                       Docs/ARCHITECTURE_DECISION_LOG.md (appended: ADL-2026-08-19-04)
+                       Docs/CHECKPOINT.md (this entry appended)
+Architecture Decisions: ADL-2026-08-19-04
+Open Issues:           None blocking. Same MOBILE-OFFLINE-SYNC.md / OFFLINE-SYNCHRONIZATION.md
+                       scope-overlap note from Checkpoint 001 still applies unchanged.
+Dependencies:          Batches 3+ depend on this batch's tenant configuration-scope Ownership Map
+                       (MULTI-TENANCY.md §5), module composition hierarchy and lifecycle
+                       (MODULE-FRAMEWORK.md §2, §6), and configuration scope hierarchy /
+                       settings taxonomy (CONFIGURATION-METADATA.md §3–§4) remaining unchanged —
+                       several deferred documents (BUSINESS-FRAMEWORK.md, LICENSING-DEVICE-
+                       MANAGEMENT.md, AUTHENTICATION-AUTHORIZATION.md, PLATFORM-BRANDING.md,
+                       MARKETPLACE.md, PLUGIN-DEVELOPMENT.md) are the named depth-owners this
+                       batch cross-references and must not contradict those cross-references
+                       when drafted.
+Validation Status:    Verified · QA'd · Published (v1.0 each), including the Industry-Neutrality
+                       Audit against three unrelated industries (hospital / school / manufacturing
+                       plant) for all Core-tier content in this batch. Not Certified —
+                       Certification is milestone-level only (MI Part 10).
+GitHub Branch:         main
+Last Commit:           Committed and pushed to origin/main this session, using a temporary
+                       user-supplied fine-grained PAT scoped to this repository only. The token
+                       was used solely as an in-memory auth header for the push command; it was
+                       never written to any file, git config, log, or this checkpoint, and was
+                       discarded after the push completed. See the repository's `git log` on
+                       `main` for the exact commit SHA.
+Next Action:           Foundation Batch 3 — recommended scope: the remaining Tier-1 Core-Platform
+                       capability documents most directly depended on by the largest number of
+                       still-unstarted files: SECURITY-GOVERNANCE.md, AI-API-STRATEGY.md,
+                       DATA-ARCHITECTURE.md. (Not yet started; open for user confirmation or
+                       override before Batch 3 begins.)
+Blocking Conditions:  None for Batch 2. GitHub write access is not standing/persistent in this
+                       environment — a scoped token must be supplied again by the user for any
+                       future session that needs to push directly.
+```
+
+---
