@@ -76,3 +76,37 @@ Governing Authority: `Docs/MI.md` Part 8 (Decision & Conflict-Resolution Princip
 **Scope Impact:** Foundation/Knowledge Base document set — Batch 2 of the anticipated ~9–11 batch sequence across the 31 files (`MULTI-TENANCY.md`, `MODULE-FRAMEWORK.md`, `CONFIGURATION-METADATA.md`).
 
 ---
+
+### ADL-2026-08-19-05
+
+**Context:** Checkpoint 002 recorded Foundation Batch 3 as recommended but not started, scoped to `SECURITY-GOVERNANCE.md`, `AI-API-STRATEGY.md`, `DATA-ARCHITECTURE.md`, explicitly flagged "open for user confirmation or override before Batch 3 begins" — a stronger flag than Checkpoint 001's Batch 2 note, since the user's resume message this session was a literal Appendix A trigger phrase ("Continue from the latest verified... checkpoint") sent as a fresh top-level request rather than mid-session shorthand, and no session-level instruction had yet scoped work to a specific batch.
+
+**Action:** Surfaced the recommended Batch 3 scope and the GitHub-handling question to the user as two explicit confirmation options before drafting anything, rather than applying ADL-2026-08-19-04's "bare Continue trigger resumes without re-confirmation" pattern automatically.
+
+**Recommendation:** The user confirmed the recommended scope as-is ("Yes, proceed as recommended") and elected to supply a temporary repository-scoped PAT for the commit/push step. Proceeded to draft `SECURITY-GOVERNANCE.md` (10 of 31), `AI-API-STRATEGY.md` (11 of 31), and `DATA-ARCHITECTURE.md` (13 of 31) under that confirmed scope.
+
+**Why:** MI Part 12 treats a missing required confirmation as a Blocking Condition when it "cannot be filled by a logged, justified assumption." Batch 3 is the first batch where the checkpoint's own open-question note was addressed to the user directly at the start of a new session (not mid-flow), and the batch also introduces a live credential-handling decision (GitHub PAT) that ADL-2026-08-19-04's precedent did not need to address for Batch 2. Both are genuine open questions, not merely restating context already in the ledger, so asking did not violate MI Appendix A.
+
+**Alternatives (rejected):** (a) Apply ADL-2026-08-19-04's precedent uniformly and proceed directly into the recommended Batch 3 scope without asking — rejected because it would have also silently decided the GitHub-handling question, which the checkpoint ledger had no recorded answer for. (b) Ask only about GitHub handling and silently assume the batch scope — rejected as inconsistent given both were flagged together in Checkpoint 002's Next Action.
+
+**Authority Cited:** MI Part 12 (Blocking Conditions); MI Part 9.3 (Resume Policy); ADL-2026-08-19-04 (distinguished, not overturned).
+**Scope Impact:** Foundation/Knowledge Base document set — Batch 3 of the anticipated ~9–11 batch sequence across the 31 files (`SECURITY-GOVERNANCE.md`, `AI-API-STRATEGY.md`, `DATA-ARCHITECTURE.md`). Also governs GitHub credential handling for this session (§11.3/11.4 practice): the user-supplied PAT is used only as an in-memory auth header for the push command, never written to any file, git config, log, or the checkpoint.
+
+---
+
+### ADL-2026-08-19-06
+
+**Context:** While drafting Batch 3, the AI Architecture Standards raw knowledge listed Core Platform-tier AI Agent lists that included Healthcare-specific personas (e.g., role-specific clinical agent names) alongside genuinely industry-neutral Platform Agents, consistent with the Healthcare/LIS concentration already noted in ADL-2026-08-19-01 and generalized once before in ADL-2026-08-19-04. Separately, the Database Architecture Standards raw knowledge's Integration section named a healthcare-specific interoperability data-exchange standard alongside industry-neutral integration mechanisms (REST API, Webhook, Import, Export, Queue, Scheduler).
+
+**Action:** In `AI-API-STRATEGY.md` §7, retained only the industry-neutral Platform Agents (Knowledge, Workflow, Automation, Analytics, Notification, Integration, Support, Security) at Core Platform tier and generalized the Healthcare-specific agent personas into the pattern "each Industry Suite may define its own specialized AI Agents," cross-referencing that ownership outward rather than naming any single industry's personas at Core tier. In `DATA-ARCHITECTURE.md` §12, generalized the named healthcare interoperability standard into "industry-standard data-exchange formats" applicable per Industry Suite.
+
+**Recommendation:** Continue applying the same generalization pattern established in ADL-2026-08-19-04 to every remaining batch sourced from the Healthcare/LIS-concentrated raw knowledge files, before Verification, not after.
+
+**Why:** MI Part 5.1 (Single-Industry Knowledge Protection) and Part 8 P6 (Industry-Neutrality Audit) require this generalization before a statement is finalized as Core Platform-tier content; MI Part 10 requires the Industry-Neutrality Audit to pass before publication.
+
+**Alternatives (rejected):** Reproduce the Healthcare-specific personas and the named interoperability standard verbatim in Core-tier sections with a "to be generalized later" flag — rejected for the same reason ADL-2026-08-19-04 rejected it: the QA gate must pass before, not after, publication.
+
+**Authority Cited:** MI Part 5.1 (Single-Industry Knowledge Protection); MI Part 8, P6 (Industry-Neutrality Audit); MI Part 10 (Delivery Lifecycle); ADL-2026-08-19-04 (precedent applied again).
+**Scope Impact:** Foundation/Knowledge Base document set — `AI-API-STRATEGY.md` §7, `DATA-ARCHITECTURE.md` §12 (Batch 3).
+
+---
