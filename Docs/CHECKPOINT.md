@@ -186,3 +186,72 @@ Blocking Conditions:  None for Batch 3. GitHub write access is not standing/pers
 ```
 
 ---
+
+## Checkpoint 004
+
+```
+Checkpoint ID:        2026-08-19-004
+Current Phase:        Phase 3 — Project Foundation Construction
+Current Task:         SBGlobal Plus Knowledge Base — Foundation Batch 4 (Core-Platform capability
+                       documents)
+Completed Tasks:      Batch 1 — VISION.md v1.0, ARCHITECTURE.md v1.0, CORE-STANDARDS.md v1.0
+                       (Published). Batch 2 — MULTI-TENANCY.md v1.0, MODULE-FRAMEWORK.md v1.0,
+                       CONFIGURATION-METADATA.md v1.0 (Published). Batch 3 — SECURITY-GOVERNANCE.md
+                       v1.0, AI-API-STRATEGY.md v1.0, DATA-ARCHITECTURE.md v1.0 (Published).
+                       Batch 4 — AUTHENTICATION-AUTHORIZATION.md v1.0, COMPLIANCE-PRIVACY.md v1.0,
+                       INTEGRATION-FRAMEWORK.md v1.0 (Published).
+In-Progress Task:     None
+Remaining Tasks:      19 of 31 Foundation documents not yet started:
+                       README.md, INDEX.md, CHANGELOG.md (Tier-0, index/meta — still deferred per
+                         ADL-2026-08-19-02),
+                       PLATFORM-BRANDING.md, DEPLOYMENT-OPERATIONS.md, DEVELOPMENT-GUIDE.md,
+                       TESTING-QUALITY.md, OBSERVABILITY-MONITORING.md, BUSINESS-FRAMEWORK.md,
+                       DESKTOP-APPLICATION.md, MOBILE-OFFLINE-SYNC.md, INSTALLATION-DEPLOYMENT.md,
+                       LICENSING-DEVICE-MANAGEMENT.md, OFFLINE-SYNCHRONIZATION.md, MARKETPLACE.md,
+                       PLUGIN-DEVELOPMENT.md, AFFILIATE-FRAMEWORK.md, NOTIFICATION-COMMUNICATION.md,
+                       ROADMAP.md
+Files Created/Modified: Docs/SBGlobal_Plus_Knowledge_Base/AUTHENTICATION-AUTHORIZATION.md (new)
+                       Docs/SBGlobal_Plus_Knowledge_Base/COMPLIANCE-PRIVACY.md (new)
+                       Docs/SBGlobal_Plus_Knowledge_Base/INTEGRATION-FRAMEWORK.md (new)
+                       Docs/ARCHITECTURE_DECISION_LOG.md (appended: ADL-2026-08-19-07)
+                       Docs/CHECKPOINT.md (this entry appended)
+Architecture Decisions: ADL-2026-08-19-07
+Open Issues:           None blocking. Same MOBILE-OFFLINE-SYNC.md / OFFLINE-SYNCHRONIZATION.md
+                       scope-overlap note from Checkpoint 001 still applies unchanged, and remains
+                       relevant now that both are in the Remaining Tasks list for near-term batches.
+Dependencies:          Later documents depend on this batch's Authentication Methods catalogue and
+                       RBAC Authorization Model (AUTHENTICATION-AUTHORIZATION.md §3, §6), the
+                       Regulatory Alignment Roadmap and Breach Notification timelines
+                       (COMPLIANCE-PRIVACY.md §3, §8), and the Integration Mechanisms / Webhook
+                       Framework standard (INTEGRATION-FRAMEWORK.md §3, §5) remaining unchanged —
+                       LICENSING-DEVICE-MANAGEMENT.md, BUSINESS-FRAMEWORK.md, MARKETPLACE.md, and
+                       NOTIFICATION-COMMUNICATION.md are the named depth-owners this batch
+                       cross-references and must not contradict when drafted.
+Validation Status:    Verified · QA'd · Published (v1.0 each), including the Industry-Neutrality
+                       Audit against three unrelated industries (hospital / school / manufacturing
+                       plant) for all Core-tier content in this batch, the preserved (not widened)
+                       vertical-scoping of HIPAA-readiness in COMPLIANCE-PRIVACY.md §3, and the
+                       interoperability-standard generalization in INTEGRATION-FRAMEWORK.md §3/§7
+                       recorded in ADL-2026-08-19-07. Not Certified — Certification is
+                       milestone-level only (MI Part 10).
+GitHub Branch:         main
+Last Commit:           Committed and pushed to origin/main this session, using a temporary
+                       user-supplied fine-grained PAT scoped to this repository only. The token
+                       was used solely as an in-memory auth header for the push command; it was
+                       never written to any file, git config, log, or this checkpoint, and was
+                       discarded after the push completed. See the repository's `git log` on
+                       `main` for the exact commit SHA. Because the token was pasted directly into
+                       the chat rather than supplied through a secret-handling channel, the user
+                       was advised to revoke/rotate it once this session's push completed.
+Next Action:           Foundation Batch 5 — recommended scope (by cross-reference frequency across
+                       the 12 Published documents): OBSERVABILITY-MONITORING.md (6 references),
+                       BUSINESS-FRAMEWORK.md (5 references), LICENSING-DEVICE-MANAGEMENT.md
+                       (4 references, tied with NOTIFICATION-COMMUNICATION.md but named directly in
+                       this batch's own Ownership Maps). (Not yet started; open for user
+                       confirmation or override before Batch 5 begins.)
+Blocking Conditions:  None for Batch 4. GitHub write access is not standing/persistent in this
+                       environment — a scoped token must be supplied again by the user for any
+                       future session that needs to push directly.
+```
+
+---
