@@ -123,3 +123,66 @@ Blocking Conditions:  None for Batch 2. GitHub write access is not standing/pers
 ```
 
 ---
+
+## Checkpoint 003
+
+```
+Checkpoint ID:        2026-08-19-003
+Current Phase:        Phase 3 — Project Foundation Construction
+Current Task:         SBGlobal Plus Knowledge Base — Foundation Batch 3 (Tier-1 Core-Platform
+                       capability documents)
+Completed Tasks:      Batch 1 — VISION.md v1.0, ARCHITECTURE.md v1.0, CORE-STANDARDS.md v1.0
+                       (Published). Batch 2 — MULTI-TENANCY.md v1.0, MODULE-FRAMEWORK.md v1.0,
+                       CONFIGURATION-METADATA.md v1.0 (Published). Batch 3 — SECURITY-GOVERNANCE.md
+                       v1.0, AI-API-STRATEGY.md v1.0, DATA-ARCHITECTURE.md v1.0 (Published).
+In-Progress Task:     None
+Remaining Tasks:      22 of 31 Foundation documents not yet started:
+                       README.md, INDEX.md, CHANGELOG.md (Tier-0, index/meta — still deferred per
+                         ADL-2026-08-19-02),
+                       PLATFORM-BRANDING.md, INTEGRATION-FRAMEWORK.md, DEPLOYMENT-OPERATIONS.md,
+                       DEVELOPMENT-GUIDE.md, TESTING-QUALITY.md, OBSERVABILITY-MONITORING.md,
+                       BUSINESS-FRAMEWORK.md, DESKTOP-APPLICATION.md, MOBILE-OFFLINE-SYNC.md,
+                       INSTALLATION-DEPLOYMENT.md, AUTHENTICATION-AUTHORIZATION.md,
+                       LICENSING-DEVICE-MANAGEMENT.md, OFFLINE-SYNCHRONIZATION.md, MARKETPLACE.md,
+                       PLUGIN-DEVELOPMENT.md, AFFILIATE-FRAMEWORK.md, NOTIFICATION-COMMUNICATION.md,
+                       ROADMAP.md, COMPLIANCE-PRIVACY.md
+Files Created/Modified: Docs/SBGlobal_Plus_Knowledge_Base/SECURITY-GOVERNANCE.md (new)
+                       Docs/SBGlobal_Plus_Knowledge_Base/AI-API-STRATEGY.md (new)
+                       Docs/SBGlobal_Plus_Knowledge_Base/DATA-ARCHITECTURE.md (new)
+                       Docs/ARCHITECTURE_DECISION_LOG.md (appended: ADL-2026-08-19-05, ADL-2026-08-19-06)
+                       Docs/CHECKPOINT.md (this entry appended)
+Architecture Decisions: ADL-2026-08-19-05, ADL-2026-08-19-06
+Open Issues:           None blocking. Same MOBILE-OFFLINE-SYNC.md / OFFLINE-SYNCHRONIZATION.md
+                       scope-overlap note from Checkpoint 001 still applies unchanged.
+Dependencies:          Later documents depend on this batch's Platform-Locked Security Settings list
+                       (SECURITY-GOVERNANCE.md §7), API design/versioning standard and AI provider
+                       abstraction (AI-API-STRATEGY.md §3, §5), and the database-level tenant
+                       isolation strategy and audit-trail field standard (DATA-ARCHITECTURE.md §4,
+                       §7) remaining unchanged — AUTHENTICATION-AUTHORIZATION.md, COMPLIANCE-PRIVACY.md,
+                       INTEGRATION-FRAMEWORK.md, BUSINESS-FRAMEWORK.md, and MARKETPLACE.md are the
+                       named depth-owners this batch cross-references and must not contradict when
+                       drafted.
+Validation Status:    Verified · QA'd · Published (v1.0 each), including the Industry-Neutrality
+                       Audit against three unrelated industries (hospital / school / manufacturing
+                       plant) for all Core-tier content in this batch, and the agent-persona /
+                       interoperability-standard generalization pass recorded in ADL-2026-08-19-06.
+                       Not Certified — Certification is milestone-level only (MI Part 10).
+GitHub Branch:         main
+Last Commit:           Committed and pushed to origin/main this session, using a temporary
+                       user-supplied fine-grained PAT scoped to this repository only. The token
+                       was used solely as an in-memory auth header for the push command; it was
+                       never written to any file, git config, log, or this checkpoint, and was
+                       discarded after the push completed. See the repository's `git log` on
+                       `main` for the exact commit SHA.
+Next Action:           Foundation Batch 4 — recommended scope: AUTHENTICATION-AUTHORIZATION.md,
+                       COMPLIANCE-PRIVACY.md, INTEGRATION-FRAMEWORK.md — the remaining Tier-1
+                       Core-Platform documents most directly depended on by the largest number of
+                       still-unstarted files, and the two documents SECURITY-GOVERNANCE.md most
+                       heavily deferred authentication and regulatory depth to. (Not yet started;
+                       open for user confirmation or override before Batch 4 begins.)
+Blocking Conditions:  None for Batch 3. GitHub write access is not standing/persistent in this
+                       environment — a scoped token must be supplied again by the user for any
+                       future session that needs to push directly.
+```
+
+---
