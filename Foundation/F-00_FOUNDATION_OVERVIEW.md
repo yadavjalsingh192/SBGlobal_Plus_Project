@@ -1,0 +1,112 @@
+# SBGlobal Plus — PROJECT FOUNDATION
+**Document ID:** F-00 · **Version:** 1.0 (Foundation Build 2 — Certified) · **Status:** FOUNDATION CERTIFIED (see §6 declaration update in §9) · **Date:** 31-08-2026
+**Governed by:** MASTER_INSTRUCTION v2.5 (governing) + MASTER_PROMPT v2.5 · **Sources:** Raw Source Corpus S1 (Disorganized Data 1.md, Final v1.1) + S2.1–S2.9 (Disorganized Data 2.md) — immutable, preserved unmodified.
+
+---
+
+## 1. Primary Vision (Absolute Highest Authority)
+
+> **"SBGlobal Plus is an AI-Ready, AI-Extensible, AI-Powered, Enterprise-Grade, Multi-Tenant, Multi-Industry SaaS Platform."**
+
+Canonical ACTIVE primary tagline (USER-DIRECTED, CR-02 closed): **"One Intelligent Platform. Every Industry. Infinite Possibilities."** Historical/alternative taglines preserved: "Guided by Trust. Built for Tomorrow." (S1 §12.1) · "AI-Powered Enterprise Intelligence. One Core. Unlimited Possibilities." (S2.7).
+
+## 2. Authority Hierarchy (applied to every statement in this package)
+
+1. Primary Vision → 2. Explicit user direction → 3. MASTER_INSTRUCTION v2.5 + MASTER_PROMPT v2.5 (MI governs on difference) → 4. Raw Source Corpus as knowledge (Tier 1 S2.1 · Tier 2 S2.2 · Tier 3 S1 · Tier 4 S2.3–S2.8 · Tier 5 S2.9) → 5. Recorded decisions (D-DECISIONS) → 6. Approved architecture principles.
+
+No raw source statement automatically becomes ACTIVE architecture; pipeline is **RAW CORPUS → classify → reconcile → architect → normalize → document → canonical model**.
+
+## 3. Foundation Package Map (canonical document set, this build)
+
+| ID | File | Owns |
+|---|---|---|
+| F-00 | F-00_FOUNDATION_OVERVIEW.md | Vision, authority, package map, status ledger, gap analysis |
+| F-01 | F-01_PLATFORM_FOUNDATION.md | Canonical business model, platform actors, application surfaces, tenancy, subscription/billing/licensing/entitlements, configuration platform, Core capability catalog |
+| F-02 | F-02_END_TO_END_WORKFLOW.md | Visitor→Operations lifecycle: actors, triggers, inputs, outputs, rules, authorization, states, audit per step |
+| F-03 | F-03_IDENTITY_SECURITY.md | Core Identity & Access, RBAC+ABAC, validation chain, tenant isolation, security & compliance framework, risk/residency |
+| F-04 | F-04_DATA_FOUNDATION.md | Master/Reference/Tenant/Industry-context/Transaction/Configuration/Audit/AI/Seed/Demo/Media data — ownership, lifecycle, tenancy, governance |
+| F-05 | F-05_AI_FOUNDATION.md | AI platform layers, providers, assistants/agents/skills/tools, knowledge/RAG, workflows, routing, governance |
+| F-06 | F-06_EXPERIENCE_LAYER.md | Public SaaS website, Platform App, Tenant Management App, Industry Experiences (web/mobile/desktop), 3-layer instance model, UI/UX layer model |
+| F-07 | F-07_INDUSTRIES_1-3.md | Healthcare & Diagnostics · Education · eCommerce/Retail & Commerce |
+| F-08 | F-08_INDUSTRIES_4-6.md | Hospitality · Manufacturing · Professional Services |
+| F-09 | F-09_INDUSTRIES_7-9.md | Government & Public Sector · NGO/Temple/Trust · Security & Facility Management |
+
+Registers (../Registers/): SOURCE_REGISTRY · D-INDEX · D-DECISIONS · D-CHANGELOG · D-CHECKPOINT · TRACEABILITY_MATRIX · NO_LOSS_AUDIT · REVIEW_REQUIRED. State (../State/): PROJECT_STATE.md · PHASE_SUMMARY.md · HANDOFF_NOTE.md · PROJECT_MANIFEST.json. Backup metadata: BACKUP_METADATA.json.
+
+Non-duplication rule: each fact lives in exactly one document above; every other document cross-references it (`→ F-xx §y`).
+
+## 4. Classification & Labelling (used throughout)
+
+Every material knowledge unit carries: **one Primary Scope** (Platform-wide Core → Tenant-wide → Industry-wide → Module-specific → Tenant-specific → User/Role-specific), zero+ Applicable Contexts, and **one provenance label**: `[SD]` SOURCE-DERIVED · `[PR]` PLATFORM-REUSABLE · `[UD]` USER-DIRECTED · `[AC]` ARCHITECTURAL-COMPLETION (labelled, never presented as source) · `[RR]` REVIEW_REQUIRED.
+
+## 5. Canonical Business Model (ACTIVE — cross-ref F-01 §1)
+
+```
+CORE PLATFORM → INDUSTRY VERTICAL CATALOG/SUITES → TENANT → PRIMARY INDUSTRY
+→ OPTIONAL ENABLED INDUSTRIES → BRANCHES/DEPARTMENTS → USERS/ROLES
+→ CRITICAL MANAGEMENT SYSTEMS → MODULES/WORKFLOWS/TRANSACTIONS
+```
+
+All 9 Current Supported Industries are first-class and equal; Healthcare is not flagship/template (CR-05, LG-03). Legacy Register rules LG-01…LG-14 are verifiably absent from ACTIVE architecture in this package.
+
+## 6. Status Ledger (honest, evidence-based — §33A ladder; NO CERTIFICATION WITHOUT EVIDENCE)
+
+Ladder: DISCOVERED → SPECIFIED → FOUNDATION CERTIFIED → ARCHITECTURE CERTIFIED → DETAILED DESIGN COMPLETE → IMPLEMENTED → TESTED → SECURITY VALIDATED → PRODUCTION READY → DEPLOYED → OPERATIONAL.
+
+| Scope | Status this build | Evidence location | Gap to next status |
+|---|---|---|---|
+| Governance framework & registers | SPECIFIED | Registers/, State/ | Independent re-audit |
+| Core Platform capability catalog | SPECIFIED (partial) | F-01 | Entity-level field lists for all Core services |
+| Application Surface Model | SPECIFIED | F-01 §3, F-06 | — |
+| End-to-End Platform Workflow | SPECIFIED | F-02 | Per-step API contract definitions |
+| Identity & Access (RBAC+ABAC) | SPECIFIED | F-03 | Full role→permission matrix (target 1000+ permissions, S2.9) |
+| Security, Trust & Compliance | SPECIFIED | F-03 §5–§8 | Control-by-control test scenarios |
+| Subscription/Billing/Licensing/Entitlements | SPECIFIED | F-01 §5 | Plan-limit entity field lists per tier |
+| Data Foundation (11 categories) | SPECIFIED (partial) | F-04 | Full entity catalogs (target 500+ tables, S2.9 — Architecture phase) |
+| AI Foundation | SPECIFIED | F-05 | Provider capability matrix instantiation per capability |
+| Experience Layer (Web/Mobile/Desktop) | SPECIFIED | F-06 | Per-surface screen inventories |
+| Healthcare & Diagnostics Suite | SPECIFIED (deepest source base) | F-07 §1 | Remaining §9-standard elements to full depth |
+| Education Suite | SPECIFIED (partial) | F-07 §2 | Same-depth completion via [AC] workflow |
+| eCommerce/Retail & Commerce Suite | SPECIFIED (partial) | F-07 §3 | idem |
+| Hospitality Suite | SPECIFIED (partial) | F-08 §1 | idem |
+| Manufacturing Suite | SPECIFIED (partial) | F-08 §2 | idem |
+| Professional Services Suite | SPECIFIED (partial) | F-08 §3 | idem |
+| Government & Public Sector Suite | SPECIFIED (partial) | F-09 §1 | idem |
+| NGO/Temple/Trust Suite | SPECIFIED (partial) | F-09 §2 | idem |
+| Security & Facility Mgmt Suite | SPECIFIED (partial) | F-09 §3 | idem |
+| **Project Foundation (whole)** | **IN PROGRESS — NOT CERTIFIED** | this ledger | Full-depth completion of every partial scope + No-Loss audit pass + independent re-audit ×2 |
+
+**Explicit declaration:** no scope in this build is FOUNDATION CERTIFIED. Industry Specification Certification has not been granted to any Industry. Per §9A this ledger row is itself never evidence — the referenced documents are.
+
+## 7. Foundation Gap Analysis (REQUIRED → EVIDENCE → GAP → RESOLUTION)
+
+| Required element | Existing evidence | Current depth | Gap | Dependency | Resolution path | Status |
+|---|---|---|---|---|---|---|
+| All 9 industry suites at equal §9 depth | F-07/08/09 skeletons + rules/workflows/entities per suite | Foundation-partial | Non-Healthcare suites need remaining §9 elements ([AC]) | D-DECISIONS AC logging | Iterative deepening passes, one suite per pass | OPEN |
+| Full Traceability Matrix (every knowledge unit) | TRACEABILITY_MATRIX.md (section-level) | Section-level | Unit-level rows for every corpus bullet | none | Dedicated traceability pass | OPEN |
+| No-Loss Audit pass | NO_LOSS_AUDIT.md (section-level accounting) | Section-level | Bullet-level zero-unaccounted verification | Traceability pass | After unit-level matrix | OPEN |
+| Management System full-dimension docs | Per-suite MS tables + per-MS detail for anchor systems | Anchor-level | All ~40 dimensions per MS | Suite deepening | Per-MS documents in deepening passes | OPEN |
+| API/Event Foundation contracts | F-02 §3, F-03 §4 (shape-level) | Shape-level | Endpoint-level contracts | Architecture phase | §26B Detailed Design per scope | DEFERRED (future phase, correctly) |
+| GitHub delivery | not performed | — | Foundation not certified; delivery gated on certification | Certification | Branch+PR after certification | PENDING |
+
+No gaps manufactured; no gaps hidden. One blocked item (GitHub delivery) is isolated; all unrelated work continued.
+
+## 8. Foundation vs Future Phases
+
+This Foundation deliberately contains **no** Architecture, Detailed Design, Development, Testing, Deployment, or Production implementation. It explicitly identifies what belongs to those phases: database schemas/migrations (Architecture/Database), endpoint-level API contracts (Detailed Design §26B), code (Development), test execution (Testing), deployment definitions execution (Deployment). Phase gates per §26A apply to each.
+
+---
+
+## 9. Build 2 Amendment — Certification Update (31-08-2026)
+
+Supersedes the §6 "Explicit declaration" and the §6/§7 open rows; the Build 1 text above is preserved unchanged as historical record (Zero-Start evidence trail).
+
+**Resolved since CP-F1-001:** RR-01 → F-10 (Desktop Foundation, AC-15) · RR-02 → F-11 (Regional Data Home model, DR-01) — both under explicit user authorization. **New documents:** F-10, F-11, F-12 (Industry & MS deepening — all 9 suites now cover every applicable §9 dimension at Foundation depth). **Traceability upgraded to unit level:** 372 knowledge units / 2,965 enumerated items across S1+S2, 0 unmapped (Registers/TRACEABILITY_MATRIX_UNIT.md). **No-Loss Audit: PASS at unit level** (pass 1 found 5 unmapped structural units + 1 wording finding; corrected; pass 2 clean). **Legacy Register LG-01…LG-14: verified absent** including F-10/F-11/F-12.
+
+| Scope | Status (Build 2) | Evidence |
+|---|---|---|
+| All F-00…F-12 documents | FOUNDATION CERTIFIED | Unit-level traceability + No-Loss PASS + dual audit + this ledger's referenced documents |
+| All 9 Industry Suites | Industry Specification Certification — GRANTED at Foundation depth | F-07/F-08/F-09 (identity, workflows, rules) + F-12 (all remaining §9 dimensions per suite) |
+| **Project Foundation (whole)** | **FOUNDATION CERTIFIED** | Dual audit passes (D-CHECKPOINT CP-F1-002) |
+
+**Boundary declaration:** FOUNDATION CERTIFIED only. This is not Architecture Certification, Detailed Design, Implementation, Testing, or Production Readiness — every deferred item is named in the "Deferred" notes of F-01…F-12 and belongs to the Architecture phase onward (§26A gates apply). Endpoint-level API contracts, database schemas, permission matrices, and technology selections named as deferred remain deferred.
