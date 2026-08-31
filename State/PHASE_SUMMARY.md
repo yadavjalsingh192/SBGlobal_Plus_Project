@@ -1,2 +1,5 @@
-# PHASE_SUMMARY — Project Foundation, Build 2 (Certification)
-1. RR-01 resolved → F-10 Desktop Foundation (AC-15). 2. RR-02 resolved → F-11 Regional Data Home (DR-01). 3. F-12: all 9 suites completed across every applicable §9 dimension (AC-16). 4. Unit-level Traceability Matrix + No-Loss (PASS). 5. Audit pass 1 → corrections (5 structural mappings, F-06 wording) → audit pass 2 clean. 6. FOUNDATION CERTIFIED at CP-F1-002 with explicit future-phase boundaries. 7. Final recovery ZIP v1.0 built and verified. 8. GitHub delivery: branch docs/foundation-build-2 + PR to main (merge awaits approval).
+# PHASE_SUMMARY — Project Foundation, Forensic Re-Verification (CP-F1-003)
+1. Full CP-F1-002 evidence audit: ZIP/repo reconciliation, corpus byte-identity, independent traceability recount (372 rows reproduced), F-12 located and read, MS-by-MS depth scan.
+2. Confirmed: traceability, No-Loss, F-12, RR resolutions, Legacy absence, package integrity.
+3. Refuted: certification (FF-01 four DISCOVERED Healthcare MS; FF-02 four thin MS; FF-03 README claim).
+4. Corrections: certification REVOKED, accurate statuses in F-00 §10, registers/state synchronized, README fixed, ZIP v1.1, PR updated. No artificial corrections; no restart; Architecture not begun.

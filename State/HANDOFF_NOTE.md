@@ -1,5 +1,5 @@
 # HANDOFF_NOTE
-- Resume point: CP-F1-002 (FOUNDATION CERTIFIED).
-- Next recommended task: begin Architecture phase — first deliverables: Database Architecture (schema catalog toward 500+ tables), Regional router + residency schema (DR-01 dependency), Desktop Architecture Standards (AC-15 dependency), API contract program (§26B). Task class: architecture/reasoning.
-- Approvals still required later: merge of PR docs/foundation-build-2 → main; production deployment.
-- GitHub: branch docs/foundation-build-2 in yadavjalsingh192/SBGlobal_Plus_Project; PR to main open — commit SHAs and PR number recorded in the session report.
+- Resume point: CP-F1-003 (Foundation IN PROGRESS — NOT CERTIFIED).
+- Next task (dependency order): MS Deepening Pass — (1) HLT-HMS, HLT-RIS, HLT-PMS, HLT-CMS to full Foundation depth (Healthcare-scoped, no LIS copying); (2) EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM workflows/states/rules; (3) NGO-DMS review; then per-suite certification re-evaluation and the dual re-audit. Task class: enterprise documentation.
+- Do NOT start Architecture until certification is genuinely earned.
+- PR #1 remains draft/unmerged; merge requires explicit approval.

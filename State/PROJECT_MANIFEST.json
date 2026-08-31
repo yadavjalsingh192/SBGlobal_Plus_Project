@@ -1,20 +1,19 @@
 {
   "project": "SBGlobal Plus",
-  "phase": "Project Foundation — CERTIFIED",
-  "checkpoint": "CP-F1-002",
-  "updated": "2026-08-31 (UTC)",
+  "phase": "Project Foundation — IN PROGRESS (certification revoked)",
+  "checkpoint": "CP-F1-003",
+  "updated": "2026-09-01 (UTC)",
   "governed_by": ["MASTER_INSTRUCTION v2.5", "MASTER_PROMPT v2.5"],
-  "foundation_documents": ["F-00","F-01","F-02","F-03","F-04","F-05","F-06","F-07","F-08","F-09","F-10","F-11","F-12"],
-  "registers": ["SOURCE_REGISTRY","D-INDEX","D-DECISIONS","D-CHANGELOG","D-CHECKPOINT","TRACEABILITY_MATRIX","TRACEABILITY_MATRIX_UNIT","NO_LOSS_AUDIT","REVIEW_REQUIRED"],
+  "foundation_documents": ["F-00 (v1.1)","F-01","F-02","F-03","F-04","F-05","F-06","F-07","F-08","F-09","F-10","F-11","F-12"],
   "certification": {
-    "foundation_certified": true,
-    "granted_at": "CP-F1-002",
-    "industry_certifications_granted": ["HLT","EDU","RTL","HSP","MFG","PSV","GOV","NGO","SFM"],
-    "boundary": "Foundation only — not Architecture/Design/Implementation/Testing/Production"
+    "foundation_certified": false,
+    "revoked_at": "CP-F1-003",
+    "reason": "Forensic re-verification: FF-01 (4 DISCOVERED Healthcare MS), FF-02 (4 MS below sibling depth)",
+    "industry_certifications_granted": []
   },
-  "traceability": { "units": 372, "items": 2965, "unmapped": 0, "no_loss": "PASS" },
-  "review_required_open": [],
-  "backup": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.0_CP-F1-002.zip",
-  "github": { "repo": "yadavjalsingh192/SBGlobal_Plus_Project", "branch": "docs/foundation-build-2", "pr": "to main — pending merge approval" },
-  "next_phase": "Architecture"
+  "verified_evidence": { "traceability": { "units": 372, "items": 2965, "unmapped": 0, "independently_reproduced": true }, "no_loss": "PASS", "corpus_immutable": true, "f12_exists": true },
+  "open_blockers": ["HLT-HMS","HLT-RIS","HLT-PMS","HLT-CMS","EDU-CTM","RTL-RSM","MFG-IWM","PSV-SDM","NGO-DMS (review)"],
+  "backup": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.1_CP-F1-003.zip",
+  "github": { "repo": "yadavjalsingh192/SBGlobal_Plus_Project", "branch": "docs/foundation-build-2", "pr": "#1 draft, unmerged" },
+  "next_phase": "Foundation MS Deepening Pass (Architecture blocked until certification earned)"
 }

@@ -1,10 +1,9 @@
 # PROJECT_STATE — SBGlobal Plus
-- Updated: 2026-08-31 (UTC)
-- Phase: Project Foundation — FOUNDATION CERTIFIED at CP-F1-002
-- Documents: F-00…F-12 (13) all FOUNDATION CERTIFIED; 10 registers ACTIVE; state synchronized
-- RR: none open (RR-01/RR-02 resolved, user-authorized)
-- Traceability: unit level, 372 units / 2,965 items / 0 unmapped; No-Loss PASS
-- Corpus: immutable, unmodified, packaged verbatim
-- Backup: SBGlobalPlus_FOUNDATION_RECOVERY_v1.0_CP-F1-002.zip (verified, 31 files)
-- GitHub: branch docs/foundation-build-2; PR to main pending explicit merge approval
-- Next phase: Architecture (not started — awaits continuation)
+- Updated: 2026-09-01 (UTC)
+- Phase: Project Foundation — IN PROGRESS, NOT CERTIFIED (revoked at CP-F1-003 after forensic re-verification; see F-00 §10)
+- Verified sound: package integrity, corpus immutability, unit-level traceability (372/2,965/0), No-Loss PASS, F-10/F-11/F-12 existence and content, Legacy Register absence
+- Open blockers: HLT-HMS/RIS/PMS/CMS (DISCOVERED) · EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM (below sibling depth) · NGO-DMS review · then per-suite certification + dual re-audit
+- RR: none open; blockers are work items, not ambiguities
+- Backup: SBGlobalPlus_FOUNDATION_RECOVERY_v1.1_CP-F1-003.zip
+- GitHub: docs/foundation-build-2 + PR #1 (draft, unmerged)
+- Architecture: NOT started; blocked on certification

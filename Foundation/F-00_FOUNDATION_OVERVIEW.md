@@ -1,5 +1,5 @@
 # SBGlobal Plus — PROJECT FOUNDATION
-**Document ID:** F-00 · **Version:** 1.0 (Foundation Build 2 — Certified) · **Status:** FOUNDATION CERTIFIED (see §6 declaration update in §9) · **Date:** 31-08-2026
+**Document ID:** F-00 · **Version:** 1.1 (Forensic Correction) · **Status:** IN PROGRESS — CERTIFICATION REVOKED (see §10; §9 retained as historical record) · **Date:** 01-09-2026
 **Governed by:** MASTER_INSTRUCTION v2.5 (governing) + MASTER_PROMPT v2.5 · **Sources:** Raw Source Corpus S1 (Disorganized Data 1.md, Final v1.1) + S2.1–S2.9 (Disorganized Data 2.md) — immutable, preserved unmodified.
 
 ---
@@ -52,6 +52,8 @@ All 9 Current Supported Industries are first-class and equal; Healthcare is not 
 ## 6. Status Ledger (honest, evidence-based — §33A ladder; NO CERTIFICATION WITHOUT EVIDENCE)
 
 Ladder: DISCOVERED → SPECIFIED → FOUNDATION CERTIFIED → ARCHITECTURE CERTIFIED → DETAILED DESIGN COMPLETE → IMPLEMENTED → TESTED → SECURITY VALIDATED → PRODUCTION READY → DEPLOYED → OPERATIONAL.
+
+*(Build 1 ledger — superseded first by §9, then corrected by §10; retained as historical record.)*
 
 | Scope | Status this build | Evidence location | Gap to next status |
 |---|---|---|---|
@@ -110,3 +112,40 @@ Supersedes the §6 "Explicit declaration" and the §6/§7 open rows; the Build 1
 | **Project Foundation (whole)** | **FOUNDATION CERTIFIED** | Dual audit passes (D-CHECKPOINT CP-F1-002) |
 
 **Boundary declaration:** FOUNDATION CERTIFIED only. This is not Architecture Certification, Detailed Design, Implementation, Testing, or Production Readiness — every deferred item is named in the "Deferred" notes of F-01…F-12 and belongs to the Architecture phase onward (§26A gates apply). Endpoint-level API contracts, database schemas, permission matrices, and technology selections named as deferred remain deferred.
+
+*(§9's certification grant was REVOKED by the forensic re-verification recorded in §10 below. §9 is retained unmodified as historical record only.)*
+
+---
+
+## 10. Forensic Re-Verification Amendment — CERTIFICATION REVOKED (01-09-2026, CP-F1-003)
+
+An independent forensic evidence audit of CP-F1-002 was performed against the v2.5 Definition of Done. §9's certification grant is **REVOKED** as evidence-insufficient; §9 is preserved above as historical record only. Per the Status & Certification Lifecycle, a status may never be skipped and a label is never evidence.
+
+**What the audit CONFIRMED (evidence verified, not re-litigated):**
+- Recovery ZIP: 31/31 files, tree matches repository; Raw Source Corpus byte-identical to originals (programmatic comparison).
+- Traceability: independent re-parse of both corpus files reproduces exactly 372 heading units; the unit matrix contains 372 actual rows, 0 unmapped; the 372/2,965/0 claim is genuine. No-Loss Audit PASS at unit level stands.
+- F-12 exists (14,272 bytes) and carries all claimed per-suite dimension sections; no broken cross-references found; Legacy Register LG-01…LG-14 absent from ACTIVE architecture.
+- RR-01/RR-02 resolutions (F-10, F-11/DR-01) are real documents at Foundation depth.
+
+**What the audit REFUTED (the certification-blocking findings):**
+- **FF-01 (critical):** F-07 §1.3 lists HLT-HMS, HLT-RIS, HLT-PMS, HLT-CMS as **DISCOVERED**. A suite containing DISCOVERED Management Systems cannot hold Industry Specification Certification, and §9's grant to Healthcare contradicted F-07's own table. F-12 §2.1's "structurally complete" wording described provenance-level coverage, not the required depth — ARCHITECTURAL-COMPLETION is provenance, never a substitute for depth.
+- **FF-02:** several Management Systems carry module enumerations without MS-specific workflows/states/rules at the depth their sibling systems have: **EDU-CTM** (no enquiry→batch lifecycle), **RTL-RSM** (no store-ops/cash-management workflow), **MFG-IWM** (covered only indirectly via PMS/PRO flows), **PSV-SDM** (no ticket/SLA workflow of its own). NGO-DMS is borderline (donor lifecycle partially carried by NGO-DFM's donation workflow) — flagged for the deepening pass.
+- **FF-03:** README_FOUNDATION.md incorrectly stated the Raw Source Corpus was not republished on the branch; the corpus is present at RawSourceCorpus/ (inherited from main). Corrected.
+
+**Corrected Status Ledger (supersedes §9's table):**
+
+| Scope | Corrected status | Evidence |
+|---|---|---|
+| F-01…F-06, F-10, F-11 (platform-level documents) | SPECIFIED | Document content at §9A depth; deferred items explicitly named |
+| F-07 Healthcare & Diagnostics | SPECIFIED — PARTIAL | HLT-LIS SPECIFIED (source-deep); HLT-HMS/RIS/PMS/CMS remain DISCOVERED |
+| F-07 Education · F-07 Retail · F-08 Manufacturing · F-08 Professional Services | SPECIFIED — PARTIAL | Suite-level dimensions complete (F-12); FF-02 MS gaps open |
+| F-08 Hospitality · F-09 Government · F-09 NGO/Temple/Trust · F-09 Security & Facility Mgmt | SPECIFIED | All MS carry dedicated workflows + rules + F-12 dimensions (NGO-DMS borderline, flagged) |
+| Industry Specification Certification (all 9 suites) | **NOT GRANTED — REVOKED** | Blocked by FF-01/FF-02 |
+| Traceability / No-Loss | VERIFIED — PASS | Forensic recount, this amendment |
+| **Project Foundation (whole)** | **IN PROGRESS — NOT CERTIFIED** | This amendment; blockers below |
+
+**Remaining blockers to certification (dependency order):**
+1. HLT-HMS, HLT-RIS, HLT-PMS, HLT-CMS — full Foundation-level MS specifications (vision, actors, modules, masters, transactions, workflows, states, rules, approvals, documents, notifications, KPIs, events, dependencies), Healthcare-scoped, no LIS copying.
+2. EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM (+ NGO-DMS review) — MS-specific workflows/states/rules to sibling depth.
+3. Per-suite Industry Specification Certification re-evaluation on the corrected evidence.
+4. Full re-audit ×2 → certification decision → new recovery ZIP → PR update.
