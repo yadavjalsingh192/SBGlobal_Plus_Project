@@ -1,5 +1,5 @@
 # F-07 — INDUSTRY SUITES 1–3: HEALTHCARE & DIAGNOSTICS · EDUCATION · eCOMMERCE / RETAIL & COMMERCE
-**Document ID:** F-07 · **Version:** 0.1 · **Status:** SPECIFIED (Healthcare deepest source base; Education/Retail partial) · Cross-refs: F-01 (Core capabilities — consumed, never reimplemented), F-03 (identity/isolation), F-04 (data), F-05 (AI), F-06 (experiences).
+**Document ID:** F-07 · **Version:** 0.1 · **Status:** SPECIFIED (Healthcare deepest source base; Education/Retail partial) · Cross-refs: F-01 (Core capabilities — consumed, never reimplemented), F-03 (identity/isolation), F-04 (data), F-05 (AI), F-06 (experiences). Build 2: remaining §9 dimensions completed in F-12 §2.1–2.3.
 
 All suites are first-class and equal. Healthcare content is scoped entirely to its Suite layer and is never a template for the others (LG-03). Non-source elements are labelled `[AC]` with rationale, per §35.
 
@@ -60,7 +60,7 @@ Operational platform for schools, colleges/universities, coaching & training ins
 EDU-SMS School Management System · EDU-CUM College & University Management System · EDU-CTM Coaching & Training Management System · EDU-LMS Learning Management System · EDU-EMS Examination Management System — all DISCOVERED→SPECIFIED at Foundation level below.
 
 ## 2.3 Core Workflows (states) `[AC]`
-- **Admission:** Enquiry → Application → Document Verification → Assessment/Interview (optional) → Offer → Fee Payment → Enrolled → (Rejected/Withdrawn). 
+- **Admission:** Enquiry → Application → Document Verification → Assessment/Interview (optional) → Offer → Fee Payment → Enrolled → (Rejected/Withdrawn).
 - **Academic session:** Session Setup → Class/Section & Subject Allocation → Timetable → Attendance (daily/period) → Continuous Assessment → Promotion/Detention.
 - **Examination (EDU-EMS):** Exam Definition → Schedule → Hall Ticket Issue → Conduct → Evaluation → Moderation → Result Approval → Publication → Re-evaluation Request.
 - **Fees:** Fee Structure → Installment Plan → Invoice → Payment/Receipt → Defaulter Tracking → Refund/Concession.
