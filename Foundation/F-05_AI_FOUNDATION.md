@@ -13,7 +13,7 @@ Canonical provider registry (13): OpenAI · Anthropic Claude · Google Gemini ·
 - **Core assistants:** Enterprise · Organization · Tenant · Personal AI Assistant.
 - **Industry assistants (provisioned by suite/plan/role):** Healthcare, Education, Retail & Commerce, Manufacturing, Hospitality, Professional Services, Security & Facility, Government & NGO AI Assistants.
 - **Platform agents:** Knowledge, Workflow, Automation, Analytics, Notification, Integration, Support, Security.
-- **Industry agents:** defined per Suite (F-07…F-09); Healthcare's Patient/Doctor/Lab agents are Healthcare-scoped, never templates for other suites.
+- **Industry agents:** defined per Suite (F-07…F-09); Healthcare's Patient/Doctor/Lab-Technician agents are Healthcare-scoped, never templates for other suites.
 - **Skills/tools:** function calling, streaming, JSON mode, REST/SDK/Webhook/**MCP** integration.
 
 ## 4. Knowledge & RAG `[SD: S2.6]`
@@ -26,7 +26,7 @@ Routing considers: task type, industry vertical, user role, plan, feature availa
 Tenant isolation · role-based access · prompt validation · encryption · PII protection · audit logging · rate limiting · content moderation · prompt-injection protection · jailbreak detection · guardrails · sensitive-data detection · model safety validation. **BR-AI-01:** Trigger: any AI request; condition: request context resolved (tenant+industry+role+plan); action: scope knowledge/memory retrieval strictly to that context; cross-context retrieval denied and audited.
 
 ## 7. Governance & Observability `[SD: S2.6; S2.2 §33]`
-Provider abstraction, prompt templates & centralized Prompt Management (library, categories, versioning, variables, tenant/industry-specific prompts, approval workflow, testing, rollback, audit), model registry, version control, cost tracking, fallback/retry, monitoring, evaluation, human approval, AI policy management, usage quotas, budget management, model lifecycle, provider health. Observability: request/response metrics, token usage, cost analytics, latency, errors, success/failure rates, AI performance dashboard. AI Development Center reviews never modify production automatically; every recommendation requires Super Admin approval; every AI operation logged.
+Provider abstraction, prompt templates & centralized Prompt Management (library, categories, versioning, variables, tenant/industry-specific prompts, approval workflow, testing, rollback, audit), model registry, version control, cost tracking, fallback/retry, monitoring, evaluation, human approval, AI policy management, usage quotas, budget management, model lifecycle, provider health. Observability: request/response metrics, token usage, cost analytics, latency, errors, success/failure rates, AI performance dashboard. AI Development Center reviews (code/security/performance/…) never modify production automatically; every recommendation requires Super Admin approval; every AI operation logged.
 
 ## 8. Commercial Packaging (cross-ref)
 AI billing, credits, usage metering, token consumption, media-generation credits, monthly limits, pay-as-you-go, overage — owned by Subscription & Billing (F-01 §5); AI packs/marketplace licensing owned by the entitlement chain; Marketplace items: assistants, agents, prompt packs, skills, templates, workflows, automations, connectors, plugins, extensions.

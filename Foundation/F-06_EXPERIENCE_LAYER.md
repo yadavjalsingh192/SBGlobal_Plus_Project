@@ -1,5 +1,5 @@
 # F-06 — EXPERIENCE LAYER (WEB · MOBILE · DESKTOP)
-**Document ID:** F-06 · **Version:** 0.1 · **Status:** SPECIFIED · Cross-refs: F-01 §3 (surfaces), F-03 (identity), F-07…F-09 (industry experiences). Build 2: Desktop depth completed in F-10 (RR-01 resolved).
+**Document ID:** F-06 · **Version:** 0.1 · **Status:** SPECIFIED · Cross-refs: F-01 §3 (surfaces), F-03 (identity), F-07…F-09 (industry experiences).
 
 ---
 
@@ -24,7 +24,7 @@ Per F-01 §3. Tenant Management covers: tenant profile, primary/enabled industri
 - Dynamic mobile platform `[SD: S2.2 §31]`: Super Admin manages branding/navigation/endpoints/version control/maintenance mode without rebuild (native package changes excepted).
 
 ## 5. Desktop Architecture `[SD: MI §15; S2.1 §18]`
-Platform Desktop (platform-level) · optional Industry Desktop Experience enabled by plan/license/tenant/industry need. Windows 10/11 native (.exe/.msi), auto-update, offline-first, secure local storage, same Core Identity/APIs/security/contexts. Fluent-inspired UI, multi-window, ribbon navigation `[SD: S1 §12]`. Build 2: full Foundation-level Desktop specification is F-10 (RR-01 resolved; Desktop Architecture Standards named as an Architecture-phase deliverable).
+Platform Desktop (platform-level) · optional Industry Desktop Experience enabled by plan/license/tenant/industry need. Windows 10/11 native (.exe/.msi), auto-update, offline-first, secure local storage, same Core Identity/APIs/security/contexts. Fluent-inspired UI, multi-window, ribbon navigation `[SD: S1 §12]`. Gap preserved honestly: full Desktop Architecture Standards document does not yet exist at Mobile-standards depth `[SD: S2.1 §18 note]` → REVIEW_REQUIRED register RR-01. *(Build 2: RR-01 resolved — Foundation-level Desktop specification now at F-10; technology selection remains an Architecture-phase deliverable.)*
 
 ## 6. UI/UX Layer Model `[SD: MI §19]`
 **Core Design System → Industry Experience Layer → Tenant Branding Layer → Application Surface Layer.** Component library, grid (12/8/4), spacing scale (4…96), radius scale, status colors, breakpoints owned by Enterprise UI Design System `[SD: S2.8]`; brand tokens/typography/table/form defaults owned by Enterprise Default Standards `[SD: S2.7]` (baseline: Asia/Kolkata · dd-MM-yyyy · INR · English/Hindi); industry-specific defaults (LIS report flags, invoice defaults…) scoped to their Suites. Accessibility: keyboard navigation, ARIA, high contrast, screen reader, reduced-motion respect. Never a completely different design system per Tenant.
