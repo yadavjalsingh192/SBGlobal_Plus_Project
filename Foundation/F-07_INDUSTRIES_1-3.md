@@ -60,7 +60,7 @@ Operational platform for schools, colleges/universities, coaching & training ins
 EDU-SMS School Management System · EDU-CUM College & University Management System · EDU-CTM Coaching & Training Management System · EDU-LMS Learning Management System · EDU-EMS Examination Management System — all DISCOVERED→SPECIFIED at Foundation level below.
 
 ## 2.3 Core Workflows (states) `[AC]`
-- **Admission:** Enquiry → Application → Document Verification → Assessment/Interview (optional) → Offer → Fee Payment → Enrolled → (Rejected/Withdrawn). 
+- **Admission:** Enquiry → Application → Document Verification → Assessment/Interview (optional) → Offer → Fee Payment → Enrolled → (Rejected/Withdrawn).
 - **Academic session:** Session Setup → Class/Section & Subject Allocation → Timetable → Attendance (daily/period) → Continuous Assessment → Promotion/Detention.
 - **Examination (EDU-EMS):** Exam Definition → Schedule → Hall Ticket Issue → Conduct → Evaluation → Moderation → Result Approval → Publication → Re-evaluation Request.
 - **Fees:** Fee Structure → Installment Plan → Invoice → Payment/Receipt → Defaulter Tracking → Refund/Concession.
