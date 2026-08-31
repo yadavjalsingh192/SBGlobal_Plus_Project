@@ -1,5 +1,5 @@
 # F-09 — INDUSTRY SUITES 7–9: GOVERNMENT & PUBLIC SECTOR · NGO / TEMPLE / TRUST · SECURITY & FACILITY MANAGEMENT
-**Document ID:** F-09 · **Version:** 0.1 · **Status:** SPECIFIED (partial) · Cross-refs: F-01, F-03, F-04, F-05, F-06. Same structure and equality rules as F-07/F-08. Non-source elements labelled `[AC]`; none copies Healthcare business requirements.
+**Document ID:** F-09 · **Version:** 0.1 · **Status:** SPECIFIED (partial) · Cross-refs: F-01, F-03, F-04, F-05, F-06. Same structure and equality rules as F-07/F-08. Non-source elements labelled `[AC]`; none copies Healthcare business requirements. Build 2: remaining §9 dimensions completed in F-12 §2.7–2.9.
 
 ---
 

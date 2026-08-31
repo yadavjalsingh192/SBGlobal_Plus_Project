@@ -1,5 +1,5 @@
 # F-08 — INDUSTRY SUITES 4–6: HOSPITALITY · MANUFACTURING · PROFESSIONAL SERVICES
-**Document ID:** F-08 · **Version:** 0.1 · **Status:** SPECIFIED (partial) · Cross-refs: F-01, F-03, F-04, F-05, F-06. Same structure and equality rules as F-07. Non-source elements labelled `[AC]`; none copies Healthcare business requirements.
+**Document ID:** F-08 · **Version:** 0.1 · **Status:** SPECIFIED (partial) · Cross-refs: F-01, F-03, F-04, F-05, F-06. Same structure and equality rules as F-07. Non-source elements labelled `[AC]`; none copies Healthcare business requirements. Build 2: remaining §9 dimensions completed in F-12 §2.4–2.6.
 
 ---
 
