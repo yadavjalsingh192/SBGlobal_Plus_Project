@@ -1,0 +1,10 @@
+{
+  "backup_name": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.0_CP-F1-002.zip",
+  "checkpoint": "CP-F1-002",
+  "created": "2026-08-31 (UTC)",
+  "file_count": 31,
+  "structure": { "Governing/": 2, "RawSourceCorpus/": 2, "Foundation/": 13, "Registers/": 9, "State/": 4, "root BACKUP_METADATA.json": 1 },
+  "secrets_included": false,
+  "production_pii_included": false,
+  "verification": "Open-and-compare against expected tree performed post-creation: 31/31 files present, no missing/extra/empty entries, no size mismatches, Raw Source Corpus byte-identical to originals. RESULT: PASS"
+}
