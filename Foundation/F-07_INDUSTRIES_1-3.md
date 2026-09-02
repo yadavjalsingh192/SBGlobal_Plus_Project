@@ -1,5 +1,5 @@
 # F-07 — INDUSTRY SUITES 1–3: HEALTHCARE & DIAGNOSTICS · EDUCATION · eCOMMERCE / RETAIL & COMMERCE
-**Document ID:** F-07 · **Version:** 0.1 · **Status:** SPECIFIED (Healthcare deepest source base; Education/Retail partial) · Cross-refs: F-01 (Core capabilities — consumed, never reimplemented), F-03 (identity/isolation), F-04 (data), F-05 (AI), F-06 (experiences). Build 2: remaining §9 dimensions completed in F-12 §2.1–2.3.
+**Document ID:** F-07 · **Version:** 0.2 · **Status:** SPECIFIED (Healthcare LIS source-deep; HMS/RIS/PMS/CMS Foundation depth in F-13 §1; EDU-CTM and RTL-RSM completed in F-13 §2) · Cross-refs: F-01 (Core capabilities — consumed, never reimplemented), F-03 (identity/isolation), F-04 (data), F-05 (AI), F-06 (experiences). Build 2: remaining §9 dimensions completed in F-12 §2.1–2.3; MS depth completion in F-13 (CP-F1-004).
 
 All suites are first-class and equal. Healthcare content is scoped entirely to its Suite layer and is never a template for the others (LG-03). Non-source elements are labelled `[AC]` with rationale, per §35.
 
@@ -18,11 +18,11 @@ Lab Admin · Branch Manager · Doctor (internal/external/referral/visiting/consu
 ## 1.3 Foundational Management Systems (5, within 2–8) `[SD: S1 §7]`
 | Code | Management System | Status |
 |---|---|---|
-| HLT-HMS | Hospital Management System | DISCOVERED (source-named; depth = future pass) |
+| HLT-HMS | Hospital Management System | SPECIFIED (Foundation depth: F-13 §1.1) |
 | HLT-LIS | Laboratory Information System (LIS/Pathology) | SPECIFIED (deepest source detail below) |
-| HLT-RIS | Radiology Information System | DISCOVERED |
-| HLT-PMS | Pharmacy Management System | DISCOVERED |
-| HLT-CMS | Clinic Management System | DISCOVERED |
+| HLT-RIS | Radiology Information System | SPECIFIED (Foundation depth: F-13 §1.2) |
+| HLT-PMS | Pharmacy Management System | SPECIFIED (Foundation depth: F-13 §1.3) |
+| HLT-CMS | Clinic Management System | SPECIFIED (Foundation depth: F-13 §1.4) |
 
 ## 1.4 LIS — Foundation Detail `[SD: S2.2 §13–§25]`
 - **Modules:** patient registration, appointments (walk-in/online/mobile/home-collection, queue tokens, slots, calendar, reminders), token management, sample collection/accessioning, barcode & QR generation, sample tracking/routing/transfer/receiving/rejection/recall, worklists, analyzer integration-ready, manual result entry, auto result import, critical value alerts, delta check, verification, pathologist review, digital approval, report generation/distribution/archive, audit trail.
@@ -41,6 +41,7 @@ Lab Admin · Branch Manager · Doctor (internal/external/referral/visiting/consu
 - **BR-HLT-02 Approval gate:** Trigger: report generation request; Condition: all results verified AND pathologist digital approval present; Action: generate; otherwise block with pending-approval state.
 - **BR-HLT-03 Sample rejection:** Trigger: receipt QC fails (hemolysis, quantity, labeling); Action: mark rejected with reason, notify collection point, trigger recollection workflow, retain rejected record in audit.
 - **BR-HLT-04 Delta check:** Trigger: result entry; Condition: deviation from patient's previous result beyond configured delta; Action: hold for review before verification.
+- BR-HLT-05…20 (HMS/RIS/PMS/CMS) are owned by F-13 §1.
 
 ## 1.6 AI, Experiences, Entitlements, Demo, Testing
 - **AI `[SD: S2.6]`:** Healthcare AI Assistant; agents: Patient, Doctor, Nurse, Laboratory, Pharmacy, Appointment, Billing; AI report summary/risk/health scores; all under F-05 guardrails (HIPAA-readiness posture).
@@ -57,7 +58,7 @@ Operational platform for schools, colleges/universities, coaching & training ins
 **Organization types:** schools (K-12), colleges, universities, coaching/training centers, skill institutes. **Personas/roles:** Principal/Dean/Director, Administrator, Admissions Officer, Teacher/Faculty, Examination Controller, Accountant/Fee Clerk, Librarian, Transport Coordinator, Student, Parent/Guardian, Alumni.
 
 ## 2.2 Foundational Management Systems (5) `[SD: S1 §7]`
-EDU-SMS School Management System · EDU-CUM College & University Management System · EDU-CTM Coaching & Training Management System · EDU-LMS Learning Management System · EDU-EMS Examination Management System — all DISCOVERED→SPECIFIED at Foundation level below.
+EDU-SMS School Management System · EDU-CUM College & University Management System · EDU-CTM Coaching & Training Management System (operational depth: F-13 §2.1) · EDU-LMS Learning Management System · EDU-EMS Examination Management System — all SPECIFIED at Foundation level (below + F-12 §2.2 + F-13 §2.1).
 
 ## 2.3 Core Workflows (states) `[AC]`
 - **Admission:** Enquiry → Application → Document Verification → Assessment/Interview (optional) → Offer → Fee Payment → Enrolled → (Rejected/Withdrawn).
@@ -71,6 +72,7 @@ EDU-SMS School Management System · EDU-CUM College & University Management Syst
 - **BR-EDU-02 Result gate:** results publish only after Examination Controller approval; publication is versioned and audited.
 - **BR-EDU-03 Fee defaulter:** overdue installment → configurable reminder ladder → optional access restriction per policy (never data deletion).
 - **BR-EDU-04 Attendance threshold:** attendance below configured % → hall-ticket hold flag requiring override approval.
+- BR-EDU-05…08 (CTM) are owned by F-13 §2.1.
 
 ## 2.5 Masters, Data, AI, Experiences `[AC + SD where noted]`
 Masters: sessions `[SD: S2.7 session format]`, classes/grades, sections, subjects, streams, exam types, grading schemes, fee heads, concession types, houses, transport routes. Transactions: applications, enrollments, attendance, marks, invoices, receipts, library issues. AI `[SD: S2.6]`: Education AI Assistant; Student/Teacher/Admission/Examination agents. Experiences: School/Institute Website (admissions, notices, results), Staff Mobile, Student/Parent Mobile, optional Desktop. Demo data: synthetic students/classes/exams, DEMO-flagged. Acceptance: admission→enrollment→attendance→exam→result→fee cycle completes with audit; BR-EDU-01…04 scenario tests; tenant + industry-context isolation verified.
@@ -85,7 +87,7 @@ Operational platform for retail chains, single stores, D2C brands and marketplac
 **Organization types:** retail stores/chains, franchises, wholesalers, D2C brands, marketplace operators. **Personas/roles:** Retail Admin, Store Manager, Cashier, Warehouse Operator, Procurement Officer, Catalog Manager, Marketing Manager, Delivery Coordinator, Customer, Marketplace Seller.
 
 ## 3.2 Foundational Management Systems (5) `[SD: S1 §7]`
-RTL-RSM Retail Store MS · RTL-POS Point of Sale MS · RTL-IWM Inventory & Warehouse MS · RTL-OMS Order Management System · RTL-MKT Marketplace MS.
+RTL-RSM Retail Store MS (operational depth: F-13 §2.2) · RTL-POS Point of Sale MS · RTL-IWM Inventory & Warehouse MS · RTL-OMS Order Management System · RTL-MKT Marketplace MS.
 
 ## 3.3 Core Workflows (states) `[AC]`
 - **Order (RTL-OMS):** Cart → Placed → Payment Authorized/COD → Stock Allocated → Picked → Packed → Shipped → Delivered → Closed; branches: Cancelled, Return Requested → Return Approved → Received → Refunded.
@@ -98,6 +100,7 @@ RTL-RSM Retail Store MS · RTL-POS Point of Sale MS · RTL-IWM Inventory & Wareh
 - **BR-RTL-02 Refund approval:** refunds above configured threshold require Store Manager/Admin approval.
 - **BR-RTL-03 Price/tax integrity:** sell price resolves from active price list + tax rules (GST-ready `[SD: billing masters]`) at order time and is immutable on the order line thereafter.
 - **BR-RTL-04 Return window:** return requests accepted only within configured window per category; exceptions require approval.
+- BR-RTL-05…08 (RSM) are owned by F-13 §2.2.
 
 ## 3.5 Masters, Data, AI, Experiences
 Masters: categories, products/variants, attributes, brands, units, price lists, tax classes, warehouses, bins, couriers, payment methods, return reasons. Transactions: orders, invoices, payments, shipments, returns, stock movements, POS sessions. AI `[SD: S2.6]`: Retail & Commerce AI Assistant; Sales/Inventory/Customer-Support agents. Experiences: Storefront Website/Web App, Staff Mobile, Customer Mobile, optional POS Desktop (offline-first POS is a primary Industry Desktop candidate `[AC]`). Demo data: synthetic catalog/orders, DEMO-flagged, excluded from production KPIs. Acceptance: full order lifecycle incl. return/refund with audit; POS offline sale syncs under the Synchronization Policy; isolation tests pass.
