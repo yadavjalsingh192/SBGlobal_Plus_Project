@@ -1,5 +1,5 @@
-# PHASE_SUMMARY — Project Foundation, Forensic Re-Verification (CP-F1-003)
-1. Full CP-F1-002 evidence audit: ZIP/repo reconciliation, corpus byte-identity, independent traceability recount (372 rows reproduced), F-12 located and read, MS-by-MS depth scan.
-2. Confirmed: traceability, No-Loss, F-12, RR resolutions, Legacy absence, package integrity.
-3. Refuted: certification (FF-01 four DISCOVERED Healthcare MS; FF-02 four thin MS; FF-03 README claim).
-4. Corrections: certification REVOKED, accurate statuses in F-00 §10, registers/state synchronized, README fixed, ZIP v1.1, PR updated. No artificial corrections; no restart; Architecture not begun.
+# PHASE_SUMMARY — Project Foundation, Depth Completion (CP-F1-004)
+1. Forensic baseline re-established on docs/foundation-build-2 at CP-F1-003: state files, registers, F-07/F-08/F-09/F-12 read; FF-01/FF-02 blockers confirmed against actual content (four HLT MS marked DISCOVERED in F-07 §1.3; CTM/RSM/IWM/SDM one-line module depth in F-12 vs sibling workflow depth).
+2. Correction: F-13 MS Depth Completion authored (AC-17) — Foundation-depth purpose/actors/modules/workflows-with-states/business-rules/masters/KPIs/events/dependencies/acceptance for HLT-HMS/RIS/PMS/CMS; sibling-depth completion for EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM; NGO-DMS review closed.
+3. Synchronized: F-07 §1.3 statuses, D-INDEX, D-CHANGELOG, D-DECISIONS, D-CHECKPOINT (CP-F1-004), PROJECT_STATE, HANDOFF_NOTE.
+4. Not done (open, in dependency order): per-suite certification re-evaluation, Final Audit Pass 1, independent Pass 2, certification decision, new recovery ZIP, F-13 traceability extension. Certification remains revoked; Architecture not begun.

@@ -31,11 +31,12 @@ Seeded from MASTER_INSTRUCTION v2.5 §29 (conflict resolutions CR) plus this pro
 | AC-13 | F-09 §2 | NGO/Temple/Trust Suite operational specification | idem |
 | AC-14 | F-09 §3 | Security & Facility Management Suite operational specification | idem |
 
-## Build 2 additions (31-08-2026)
+## Build 2 additions (31-08-2026 – 02-09-2026)
 | ID | Location | Decision / Completion | Rationale · Trade-offs · Dependencies |
 |---|---|---|---|
 | DR-01 | F-11 | Regional Data Home residency model (one Core, one control plane, N regional data homes; tenant→one region; cross-region denied by default; governed migration) | USER-DIRECTED resolution of RR-02. Alternatives (single-region only / per-tenant DB everywhere / regional platform forks) rejected — see F-11 §1. Consequences: minimized control plane, region-attributed audit, graceful single-region degradation. Depends: residency schema + regional router (Architecture phase) |
 | AC-15 | F-10 | Desktop Foundation completed; implementation framework/local-DB/packaging pipeline explicitly deferred; Desktop Architecture Standards named as Architecture-phase deliverable | USER-DIRECTED resolution of RR-01. Selecting a desktop technology at Foundation would be invention (no corpus basis); all Foundation-level dimensions (surfaces, auth, RBAC/ABAC, config, offline/sync, security, testing) are specified |
 | AC-16 | F-12 | Remaining §9-standard dimensions completed for all 9 suites (docs/templates, notifications, KPIs, events, integrations, compliance, entitlements, dependencies, MS modules) | Equal-depth requirement (LG-04); per-suite content industry-specific; zero Healthcare copying (pattern-reuse note recorded for IWM) |
+| AC-17 | F-13 | FF-01/FF-02 depth completion: HLT-HMS/RIS/PMS/CMS specified at Foundation depth; EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM brought to sibling depth; NGO-DMS review closed | Resolves the depth findings that revoked certification at CP-F1-003. Healthcare depth anchored to source-named systems `[SD]`, operational detail `[AC]`; non-Healthcare content industry-specific, zero Healthcare copying (LG-03). Depends: per-suite re-evaluation + dual re-audit + traceability extension before any certification decision |
 
 Legacy Register LG-01..LG-14 verified absent from ACTIVE architecture in this package (see NO_LOSS_AUDIT §3).
