@@ -1,19 +1,21 @@
 {
   "project": "SBGlobal Plus",
-  "phase": "Project Foundation — IN PROGRESS (certification revoked)",
-  "checkpoint": "CP-F1-003",
-  "updated": "2026-09-01 (UTC)",
+  "phase": "Project Foundation — FOUNDATION CERTIFIED",
+  "checkpoint": "CP-F1-005",
+  "updated": "2026-09-02 (UTC)",
   "governed_by": ["MASTER_INSTRUCTION v2.5", "MASTER_PROMPT v2.5"],
-  "foundation_documents": ["F-00 (v1.1)","F-01","F-02","F-03","F-04","F-05","F-06","F-07","F-08","F-09","F-10","F-11","F-12"],
+  "foundation_documents": ["F-00 (v1.2)","F-01","F-02","F-03","F-04","F-05","F-06","F-07 (v0.2)","F-08","F-09","F-10","F-11","F-12","F-13","F-14"],
   "certification": {
-    "foundation_certified": false,
-    "revoked_at": "CP-F1-003",
-    "reason": "Forensic re-verification: FF-01 (4 DISCOVERED Healthcare MS), FF-02 (4 MS below sibling depth)",
-    "industry_certifications_granted": []
+    "foundation_certified": true,
+    "granted_at": "CP-F1-005",
+    "evidence": "Registers/FINAL_AUDIT_CP-F1-005.md (Pass 1 corrected→PASS; Pass 2 PASS)",
+    "boundary": "Foundation only — not Architecture/Design/Implementation/Production",
+    "prior_revocation": "CP-F1-003 (FF-01/FF-02) — resolved via F-13 (CP-F1-004) and re-verified at CP-F1-005"
   },
-  "verified_evidence": { "traceability": { "units": 372, "items": 2965, "unmapped": 0, "independently_reproduced": true }, "no_loss": "PASS", "corpus_immutable": true, "f12_exists": true },
-  "open_blockers": ["HLT-HMS","HLT-RIS","HLT-PMS","HLT-CMS","EDU-CTM","RTL-RSM","MFG-IWM","PSV-SDM","NGO-DMS (review)"],
-  "backup": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.1_CP-F1-003.zip",
+  "verified_evidence": { "traceability": { "units": 372, "items": 2965, "unmapped": 0, "extension": "TRACEABILITY_EXT_CP-F1-005.md" }, "no_loss": "PASS", "corpus_immutable": true, "governance_unchanged": true },
+  "open_blockers": [],
+  "open_delivery_items": ["Recovery ZIP v1.2 @ CP-F1-005 — build + verify, then update BACKUP_METADATA.json"],
+  "backup": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.1_CP-F1-003.zip (latest verified; v1.2 pending)",
   "github": { "repo": "yadavjalsingh192/SBGlobal_Plus_Project", "branch": "docs/foundation-build-2", "pr": "#1 draft, unmerged" },
-  "next_phase": "Foundation MS Deepening Pass (Architecture blocked until certification earned)"
+  "next_phase": "Architecture — gated on ZIP v1.2 verification + explicit user approval"
 }

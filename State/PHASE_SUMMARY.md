@@ -1,5 +1,5 @@
-# PHASE_SUMMARY — Project Foundation, Depth Completion (CP-F1-004)
-1. Forensic baseline re-established on docs/foundation-build-2 at CP-F1-003: state files, registers, F-07/F-08/F-09/F-12 read; FF-01/FF-02 blockers confirmed against actual content (four HLT MS marked DISCOVERED in F-07 §1.3; CTM/RSM/IWM/SDM one-line module depth in F-12 vs sibling workflow depth).
-2. Correction: F-13 MS Depth Completion authored (AC-17) — Foundation-depth purpose/actors/modules/workflows-with-states/business-rules/masters/KPIs/events/dependencies/acceptance for HLT-HMS/RIS/PMS/CMS; sibling-depth completion for EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM; NGO-DMS review closed.
-3. Synchronized: F-07 §1.3 statuses, D-INDEX, D-CHANGELOG, D-DECISIONS, D-CHECKPOINT (CP-F1-004), PROJECT_STATE, HANDOFF_NOTE.
-4. Not done (open, in dependency order): per-suite certification re-evaluation, Final Audit Pass 1, independent Pass 2, certification decision, new recovery ZIP, F-13 traceability extension. Certification remains revoked; Architecture not begun.
+# PHASE_SUMMARY — Project Foundation, Certification Pass (CP-F1-005)
+1. Forensic baseline: CP-F1-004 commits (3c83fd6, 55f1243) verified in history; F-07 v0.2 content-verified; all F-00…F-13 + 9 registers + 4 state files read in full; Governing/ verified untouched since last forensic verification; RawSourceCorpus/ verified untouched in history.
+2. Audit Pass 1 findings: commercial-model depth (→ F-14, AC-18); Pro/Premium route governance (→ F-14 §7, [UD]); stale F-00/README/manifest statuses (→ F-00 §11 + rewrites); traceability extension for F-13/F-14. FF-01/FF-02 dispositions re-verified against actual content — held.
+3. Audit Pass 2 (independent, adversarial): Healthcare leakage, entitlement loopholes, lifecycle gaps, isolation gaps, residency contradictions, stale claims — none found post-correction. PASS.
+4. Certification: FOUNDATION CERTIFIED recorded (Foundation only). Sole open delivery item: recovery ZIP v1.2 (environment could not package/verify the full corpus this session). Architecture not begun; merge not performed.
