@@ -1,5 +1,5 @@
 # SBGlobal Plus — PROJECT FOUNDATION
-**Document ID:** F-00 · **Version:** 1.1 (Forensic Correction) · **Status:** IN PROGRESS — CERTIFICATION REVOKED (see §10; §9 retained as historical record) · **Date:** 01-09-2026
+**Document ID:** F-00 · **Version:** 1.2 (Certification Amendment) · **Status:** FOUNDATION CERTIFIED at CP-F1-005 (see §11; §9–§10 retained as historical record) · **Date:** 02-09-2026
 **Governed by:** MASTER_INSTRUCTION v2.5 (governing) + MASTER_PROMPT v2.5 · **Sources:** Raw Source Corpus S1 (Disorganized Data 1.md, Final v1.1) + S2.1–S2.9 (Disorganized Data 2.md) — immutable, preserved unmodified.
 
 ---
@@ -31,6 +31,8 @@ No raw source statement automatically becomes ACTIVE architecture; pipeline is *
 | F-08 | F-08_INDUSTRIES_4-6.md | Hospitality · Manufacturing · Professional Services |
 | F-09 | F-09_INDUSTRIES_7-9.md | Government & Public Sector · NGO/Temple/Trust · Security & Facility Management |
 
+*(Build 2 additions: F-10 Desktop Foundation · F-11 Data Residency · F-12 Industry & MS Deepening. CP-F1-004: F-13 MS Depth Completion. CP-F1-005: F-14 Commercial Foundation. Canonical index: Registers/D-INDEX.md.)*
+
 Registers (../Registers/): SOURCE_REGISTRY · D-INDEX · D-DECISIONS · D-CHANGELOG · D-CHECKPOINT · TRACEABILITY_MATRIX · NO_LOSS_AUDIT · REVIEW_REQUIRED. State (../State/): PROJECT_STATE.md · PHASE_SUMMARY.md · HANDOFF_NOTE.md · PROJECT_MANIFEST.json. Backup metadata: BACKUP_METADATA.json.
 
 Non-duplication rule: each fact lives in exactly one document above; every other document cross-references it (`→ F-xx §y`).
@@ -53,7 +55,7 @@ All 9 Current Supported Industries are first-class and equal; Healthcare is not 
 
 Ladder: DISCOVERED → SPECIFIED → FOUNDATION CERTIFIED → ARCHITECTURE CERTIFIED → DETAILED DESIGN COMPLETE → IMPLEMENTED → TESTED → SECURITY VALIDATED → PRODUCTION READY → DEPLOYED → OPERATIONAL.
 
-*(Build 1 ledger — superseded first by §9, then corrected by §10; retained as historical record.)*
+*(Build 1 ledger — superseded first by §9, then §10, then §11; retained as historical record.)*
 
 | Scope | Status this build | Evidence location | Gap to next status |
 |---|---|---|---|
@@ -149,3 +151,27 @@ An independent forensic evidence audit of CP-F1-002 was performed against the v2
 2. EDU-CTM, RTL-RSM, MFG-IWM, PSV-SDM (+ NGO-DMS review) — MS-specific workflows/states/rules to sibling depth.
 3. Per-suite Industry Specification Certification re-evaluation on the corrected evidence.
 4. Full re-audit ×2 → certification decision → new recovery ZIP → PR update.
+
+*(§10's blockers 1–2 were resolved at CP-F1-004 via F-13; blockers 3–4 were discharged at CP-F1-005 — see §11.)*
+
+---
+
+## 11. Certification Amendment — FOUNDATION CERTIFIED (02-09-2026, CP-F1-005)
+
+Supersedes §10's status ledger and blocker list; §9–§10 preserved unmodified as historical record.
+
+**Blocker disposition (evidence-verified, not label-based):** §10 blockers 1–2 resolved by **F-13** (CP-F1-004; AC-17) — HLT-HMS/RIS/PMS/CMS at Foundation depth (F-13 §1), EDU-CTM/RTL-RSM/MFG-IWM/PSV-SDM at sibling depth + NGO-DMS review closed (F-13 §2); re-verified this pass against actual document content. Blockers 3–4 discharged this checkpoint: per-suite re-evaluation performed and dual final audit executed — **Registers/FINAL_AUDIT_CP-F1-005.md** (Pass 1: 4 findings, all corrected — chiefly the commercial-model depth gap resolved by **F-14** (AC-18); Pass 2: independent adversarial pass, clean).
+
+**Certified Status Ledger (supersedes §10's table):**
+
+| Scope | Status (CP-F1-005) | Evidence |
+|---|---|---|
+| F-01…F-06, F-10, F-11, F-12, F-13, F-14 | SPECIFIED | Document content; Architecture-phase deferrals explicitly named per document |
+| All 9 Industry Suites (incl. every Foundational MS) | Industry Specification Certification — GRANTED at Foundation depth | F-07/F-08/F-09 + F-12 + F-13; per-MS depth verified in FINAL_AUDIT_CP-F1-005 P1-05/P2 |
+| Commercial model (Plan/Subscription/License/Entitlement/Access) | SPECIFIED | F-01 §5 + F-14 |
+| Traceability / No-Loss | VERIFIED — PASS | 372/2,965/0 (CP-F1-003 forensic recount; corpus untouched since — commit history) + TRACEABILITY_EXT_CP-F1-005 |
+| **Project Foundation (whole)** | **FOUNDATION CERTIFIED** | FINAL_AUDIT_CP-F1-005 (dual pass) + this amendment's referenced documents |
+
+**Boundary declaration:** FOUNDATION CERTIFIED only — not Architecture, Detailed Design, Implementation, Testing, or Production Readiness; every deferred item remains named in F-01…F-14 and belongs to Architecture onward (§26A gates).
+
+**Open delivery item (recorded honestly):** the CP-F1-005 recovery ZIP (v1.2) is not yet produced/verified; v1.1 @ CP-F1-003 remains the latest verified backup (BACKUP_METADATA.json intentionally unchanged). Phase closure and Architecture start are gated on v1.2 verification plus explicit user approval; merge to `main` requires explicit approval.
