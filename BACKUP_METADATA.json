@@ -1,10 +1,11 @@
 {
-  "backup_name": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.1_CP-F1-003.zip",
-  "checkpoint": "CP-F1-003",
-  "created": "2026-09-01 (UTC)",
-  "file_count": 31,
-  "structure": { "Governing/": 2, "RawSourceCorpus/": 2, "Foundation/": 13, "Registers/": 9, "State/": 4, "root BACKUP_METADATA.json": 1 },
+  "backup_name": "SBGlobalPlus_FOUNDATION_RECOVERY_v1.2_CP-F1-005.zip",
+  "checkpoint": "CP-F1-005 (revision C)",
+  "created": "2026-09-04 (UTC)",
+  "file_count": 36,
+  "structure": { "Governing/": 2, "RawSourceCorpus/": 2, "Foundation/": 15, "Registers/": 11, "State/": 4, "root README_FOUNDATION.md": 1, "root BACKUP_METADATA.json": 1 },
   "secrets_included": false,
   "production_pii_included": false,
-  "verification": "Open-and-compare performed post-creation: 31/31 files, no missing/extra/empty entries, no size mismatches, Raw Source Corpus byte-identical, F-00 §10 amendment present in packaged copy. RESULT: PASS"
+  "built_from": "docs/foundation-build-2 final post-revert HEAD (CP-F1-005 revision C synchronization commit)",
+  "verification": "Open-and-compare performed post-creation against the final post-revert repository tree: 36/36 files, no missing/extra/empty entries, no size mismatches, Raw Source Corpus byte-identical to the repository state (owner-directed a811a1ab content preserved verbatim), F-06 v0.1 restored copy packaged. RESULT: PASS"
 }

@@ -1,9 +1,10 @@
-# D-CHECKPOINT — CP-F1-005 (revision B, 04-09-2026; supersedes the 02-09-2026 revision; prior checkpoints preserved in their recovery ZIPs)
-- Checkpoint ID: CP-F1-005 (revision B)
-- Created: 2026-09-02 (UTC) · Revision B: 2026-09-04 (UTC)
-- Phase: Project Foundation — **FOUNDATION CERTIFIED** (granted 02-09-2026 this checkpoint on dual-audit evidence — Registers/FINAL_AUDIT_CP-F1-005.md; Foundation only, per the certification boundary)
-- Completed at 02-09-2026: F-14 Commercial Foundation (AC-18) resolving the Pass-1 commercial-depth finding; F-00 §11 amendment; FF-01/FF-02 dispositions re-verified against actual F-13/F-07 content; traceability extension (totals unchanged 372/2,965/0); registers/state/README/manifest synchronized; Final Audit Pass 1 (corrected → PASS) and independent Pass 2 (PASS) recorded.
+# D-CHECKPOINT — CP-F1-005 (revision C, 04-09-2026; supersedes revision B; prior checkpoints preserved in their recovery ZIPs)
+- Checkpoint ID: CP-F1-005 (revision C)
+- Created: 2026-09-02 (UTC) · Revision B: 2026-09-04 (UTC) · Revision C: 2026-09-04 (UTC)
+- Phase: Project Foundation — **FOUNDATION CERTIFIED** (granted 02-09-2026 on dual-audit evidence — Registers/FINAL_AUDIT_CP-F1-005.md; Foundation only, per the certification boundary)
+- Completed at 02-09-2026: F-14 Commercial Foundation (AC-18); F-00 §11 amendment; FF-01/FF-02 dispositions re-verified against actual F-13/F-07 content; traceability extension (totals unchanged 372/2,965/0); registers/state/README/manifest synchronized; Final Audit Pass 1 (corrected → PASS) and independent Pass 2 (PASS) recorded.
 - 04-09-2026 corrective action (revision B): commit b83bea9 (F-06 §6.1 brand/color canonicalization, AC-19; RR-03) REVERTED via history-preserving revert commit efd16eb6 — the additional canonicalization/closure changes were unnecessary. F-06 restored to v0.1; D-CHANGELOG/D-DECISIONS/REVIEW_REQUIRED restored; RR-03 withdrawn. The owner-directed corpus edit a811a1ab (`RawSourceCorpus/Disorganized Data 2.md`) is ACTIVE owner intent — preserved intact, not reverted, not a defect. No reset, force-push, or history rewrite; main not merged. Do NOT recreate the b83bea9 changes in another form.
+- 04-09-2026 delivery closure (revision C): **SBGlobalPlus_FOUNDATION_RECOVERY_v1.2_CP-F1-005.zip built from the final post-revert HEAD tree and open-and-compare VERIFIED (36/36 files, no size mismatches, corpus byte-identical — see BACKUP_METADATA.json). No open delivery items remain.**
 - Carried verified: unit traceability 372/2,965/0 · No-Loss PASS · governance Masters unchanged · RawSourceCorpus per the owner-directed a811a1ab state (full history preserved).
-- **Open delivery item (sole):** final recovery ZIP v1.2 for CP-F1-005 — to be built from the current final HEAD (post-revert, post-synchronization) and open-and-compare verified; v1.1 @ CP-F1-003 remains the latest verified backup; BACKUP_METADATA.json intentionally unchanged until v1.2 exists and is verified. Phase closure and Architecture start are gated on this ZIP plus explicit user approval; merge to main requires explicit approval.
+- Gates: Architecture start requires explicit user approval; merge to main requires explicit approval.
 - GitHub: this commit on docs/foundation-build-2; PR #1 carries it (open, unmerged).

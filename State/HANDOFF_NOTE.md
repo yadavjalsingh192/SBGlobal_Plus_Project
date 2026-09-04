@@ -1,5 +1,5 @@
-# HANDOFF_NOTE — resume point CP-F1-005 (revision B)
-- Resume from: checkpoint CP-F1-005 revision B (this commit on docs/foundation-build-2). Foundation is CERTIFIED (see FINAL_AUDIT_CP-F1-005.md); do not re-litigate closed findings without new evidence.
+# HANDOFF_NOTE — resume point CP-F1-005 (revision C)
+- Resume from: checkpoint CP-F1-005 revision C (this commit on docs/foundation-build-2). Foundation is CERTIFIED (FINAL_AUDIT_CP-F1-005.md); recovery ZIP v1.2 built and verified (BACKUP_METADATA.json); no open delivery items. Do not re-litigate closed findings without new evidence.
 - History notes (04-09-2026): commit b83bea9 (unnecessary brand/color canonicalization, AC-19/RR-03) was REVERTED via history-preserving revert efd16eb6 — do NOT recreate its changes in another form. The owner-directed corpus edit a811a1ab (`RawSourceCorpus/Disorganized Data 2.md`) is ACTIVE owner intent — never revert or "restore" it.
-- Sole remaining delivery action: build SBGlobalPlus_FOUNDATION_RECOVERY_v1.2_CP-F1-005.zip from the current post-revert HEAD's full tree (Governing/, RawSourceCorpus/, Foundation/ F-00…F-14, Registers/, State/, README_FOUNDATION.md, BACKUP_METADATA.json — 36 files), verify (opens, complete tree match vs commit, corpus byte-identical to the a811a1ab owner state, file count recorded), then update BACKUP_METADATA.json + D-CHECKPOINT with the verified result.
-- Constraints: RawSourceCorpus immutable going forward (owner edits only); no merge to main without explicit approval; Architecture must not start before ZIP verification + explicit user approval; no history rewriting.
+- Next recommended action: obtain explicit owner approval for (a) merge of PR #1 to main and/or (b) Architecture phase start. Neither proceeds without that approval.
+- Constraints: RawSourceCorpus immutable going forward (owner edits only); no merge to main without explicit approval; no history rewriting.
