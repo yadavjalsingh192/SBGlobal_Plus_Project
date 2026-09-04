@@ -4069,16 +4069,16 @@ SBGlobal Plus
 ## 🆕 Organization Information
 
 - 🆕 Organization: SBGlobal Plus Pvt Ltd.
-- 🆕 Founder / CEO: Mr. Jal Singh Yadav
+- 🆕 Founder / CEO: Mr. J.S. Yadav
 - 🆕 Address: 2835/1, Swatantra Nagar, Madhya Pradesh, India – 477001
 - 🆕 Email: info@sbglobalplus.com
 
 ## Default Brand Colors
 
-- Primary: `#0F766E`
-- Primary Hover: `#115E59`
-- Secondary: `#2563EB`
-- Accent: `#06B6D4`
+- Primary: `#06B6D4`
+- Primary Hover: `#2563EB`
+- Secondary: `#0F766E`
+- Accent: `#7C3AED`
 - Success: `#16A34A`
 - Warning: `#F59E0B`
 - Danger: `#DC2626`
