@@ -1,0 +1,24 @@
+# DD CHANGELOG
+
+| Date | Change | Scope |
+|---|---|---|
+| 2026-09-11 | DetailedDesign zero-start governance, index, decision framework and Wave-1 overview established from certified CP-REM-002. | DD governance |
+| 2026-09-11 | DD Wave 1 dependency spine completed: module boundaries, Tenant+Industry Context, identity/authorization, commercial/entitlement, Core database/RLS, API/event/webhook, document/storage, audit/observability, tests, traceability and adversarial audit. | DD Wave 1 |
+| 2026-09-11 | DD Wave 2 completed: four application surfaces/shells; mobile/offline; Tauri desktop; AI/RAG/agents; integration registry/adapters; infrastructure/runtime; security/compliance; observability extensions; Wave-2 tests, traceability and adversarial audit. | DD Wave 2 |
+| 2026-09-11 | Shared P2 defaults DD-022…DD-027 closed; Wave 3 completed all 41 MS across 9 industries; cross-industry audit, full traceability and full adversarial audit PASS; overall Detailed Design certification earned. | DD Wave 3 / overall Detailed Design |
+| 2026-09-11 | Fable 5 requirements audit reopened unsupported DD-COMPLETE/READY FOR DEVELOPMENT gate; current state set to remediation required and development blocked. | DD remediation |
+| 2026-09-12 | Fable 5 closure completed: 41-MS substantive re-audit, exact workflows/catalogs/domain rules/KPI coverage, final-head isolation, requirement-level traceability, REVIEW_REQUIRED sweep and overall adversarial DD-20D PASS. New checkpoint DD-F5-RECERTIFIED; Development authorized as next phase. | DD final recertification |
+| 12-09-2026 | Final evidence consistency correction: DD-17 summary counts reconciled to authoritative artifacts (DD-22 = 41 major MS workflow matrices / 309 allowed edges; DD-25 = 169 KPI contracts; DD-28 = 165/165 named metrics mapped). HANDOFF/PHASE headers made explicitly current while preserving historical blocks. No product/DD semantics changed; substantive audited HEAD remains 810e43c9c75e3750f52cc7e1954db8f341e6d79b. | Final audit/state evidence; AI |
+| 2026-09-13 | Phase 3 fresh DD revalidation: 55/55 DD files full-read; propagated Phase-1/2 deltas into DD-01/05/09/10/11/13/17/18/19/26 and all 9 Industry DD mobile mappings; refreshed DD-20D/DD-29/DD-30/DD-31; DD COMPLETE / ready for final pre-development gate. | PHASE3-DD-REVALIDATED |
+| 2026-09-13 | Current-state audit propagated executable database findings into DD-03/05/07/08/09/17/18 and PSV media fields: immutable/same-scope ownership, dedicated roles/elevation, exact event/webhook scope, DocumentMeta dependencies/provenance and physical PromptSet/ToolSet contracts. Runtime verdict remains conditional on exact-head CI. | DEV-DB-AC-008…010 / DD-036…039 |
+| 2026-09-14 | All-stages audit reconciliation: 0032 closes general-role platform-definition/child writes; DBA-001…013 and exact-commit CI cover the corrected persistence contracts. Source routes, DD state/traceability and current/historical evidence reconciled. HLT literal newlines and DD-22/22H/changelog table delimiters repaired without changing domain workflow cells. | Current Database checkpoint; audit report and per-file ledger |
+
+## 2026-09-14 — DD-040 / concrete Core SQL adapter binding
+Rechecked the current remote Core checkpoint against DD-02/03/04/05/06 and the SQL inventory. Recorded exact field ownership and the unbound compiled-permission/Industry-presentation dependencies in `../Development/CORE_PERSISTENCE_ADAPTER_MAP.md`. DD-040 specifies pool transaction, RLS role, route matching, cleanup and acceptance for the independent application SQL driver prerequisite; no industry schema or RawSource changes.
+
+
+## 2026-09-17 — DD-043 platform-global scope propagation
+Fresh zero-trust continuation found that DD-043 tests and persistence existed but the SQL request-scope implementation and current acceptance/traceability projections were incomplete. RequestScopedSql now denies HUMAN/API_CLIENT PLATFORM_GLOBAL contexts before transaction use; DD-17 adds explicit ID/DB acceptance contracts; DD-19 routes DD-043 through migration/verification 0034 and executable tests. Exact-head Core and Database CI passed at `3e7b2927839d289240eb389902563f5ab3d68074`. No RawSource, Industry/MS model, or main-branch change.
+
+## 2026-09-17 — DD-044 provider/session-security contract
+Defined the Clerk human-session → internal principal/session/device security boundary without trusting custom provider claims for SBGlobal authorization. Added a dedicated NOBYPASSRLS identity-service SQL adapter, provider-specific Clerk IdentityPort adapter, server-owned SessionSecurityPort implementation, PostgreSQL identity/security store and executable unit + real-PostgreSQL tests. No RawSource, Industry/MS schema, `main`, production deployment or provider-SDK package bootstrap change.
